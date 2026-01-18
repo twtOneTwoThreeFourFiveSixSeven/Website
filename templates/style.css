@@ -1,0 +1,99 @@
+/* 1. Keep the import */
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background-color: rgb(200, 187, 150);
+    color: white;
+    /* 2. FIX: Use the correct font name in quotes */
+    /* 3. FIX: Removed the '-regular' suffix which isn't part of the font name */
+    font-family: "Lacquer", system-ui, sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 0.2em;
+}
+
+p {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    position: fixed; /* Stays at the top while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    display: flex;
+    justify-content: space-between; /* Logo on left, links on right */
+    align-items: center;
+    padding: 0 50px;
+    z-index: 1000; /* Ensures it stays on top of all other content */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: rgb(200, 187, 150); /* Highlight color on hover */
+}
+
+.first-chunk {
+    background-image: url('/static/isher.png');
+    background-size:100%;
+    background-position: 70%;
+    margin-top: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.second-chunk {
+    background-color: rgb(200, 187, 150);
+    align-items: left;
+    text-align: left;
+    text-indent: 5%;
+}
+
+.text-content {
+    padding: 20px;
+    color: black;
+    text-align: left;
+    display: flex;
+}
+
+.image-container {
+    
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    padding: 20px;
+}
